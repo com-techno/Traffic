@@ -1,0 +1,1 @@
+C:/cygwin64/bin/g++.exe  -static-libstdc++ -static-libgcc -static -lpthread -g  -Wl,--enable-auto-import CMakeFiles/glist.dir/main.cpp.o  -o glist.exe -Wl,--out-implib,libglist.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

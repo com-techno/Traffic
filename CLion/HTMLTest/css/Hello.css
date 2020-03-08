@@ -1,0 +1,71 @@
+div{
+
+}
+#header-div {
+    height: 100px;
+    width: 100%;
+    margin: -10px -10px  5px -10px;
+    border-radius: 0 0 10px 10px;
+    border-style: none;
+    background-color: #cccccc;
+    display: inline-block;
+}
+
+#name-div {
+    color: black;
+    width: 100px;
+    border-style: solid;
+    display: inline-block;
+}
+
+#timer-div {
+    color: black;
+    text-underline-style: none;
+    margin-left: 150px;
+    width: 100px;
+    border-style: solid;
+    display: inline-block;
+}
+
+#timer-a {
+    color: black;
+    text-underline-style: none;
+    font-size: 25px;
+    font-family: "Arial", sans-serif;
+    text-decoration: none;
+}
+
+.task {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: khaki;
+    border-radius: 5px;
+    border: 5px none;
+
+}
+
+.task {
+    transform: scale(1.0);
+    opacity: 1;
+    margin-left: 0;
+    transition: all 1s;
+}
+
+#task-div {
+    margin-left: 20%;
+    margin-right:15%;
+    display: inline-block;
+}
+
+#personal-info{
+    margin-left: 90%;
+    margin-right: 5%;
+    display: inline-block;
+}
+
+.task:hover{
+    transform: scale(0.8);
+    opacity: 0.7;
+    transition: all 1s;
+}

@@ -1,0 +1,4 @@
+"C:\Program Files\JetBrains\CLion\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\_MyProjects\CLionProjects\DYNA_MaxSubstring
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/_MyProjects/CLionProjects/DYNA_MaxSubstring/cmake-build-debug

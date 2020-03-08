@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Sinyavsk/CLionProjects/arduino-cmake-master/serial/serial.cpp
+Arduino.h
+C:/Users/Sinyavsk/CLionProjects/arduino-cmake-master/serial/Arduino.h
+WProgram.h
+C:/Users/Sinyavsk/CLionProjects/arduino-cmake-master/serial/WProgram.h
+LiquidCrystal/LiquidCrystal.h
+C:/Users/Sinyavsk/CLionProjects/arduino-cmake-master/serial/LiquidCrystal/LiquidCrystal.h
+WiFi/WiFi.h
+C:/Users/Sinyavsk/CLionProjects/arduino-cmake-master/serial/WiFi/WiFi.h
+

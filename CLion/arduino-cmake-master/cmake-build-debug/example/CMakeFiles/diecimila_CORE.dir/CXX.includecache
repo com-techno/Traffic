@@ -1,0 +1,206 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Arduino.h
+stdlib.h
+-
+string.h
+-
+math.h
+-
+avr/pgmspace.h
+-
+avr/io.h
+-
+avr/interrupt.h
+-
+binary.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/binary.h
+WCharacter.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/WCharacter.h
+WString.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/WString.h
+HardwareSerial.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/HardwareSerial.h
+pins_arduino.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/pins_arduino.h
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/CDC.cpp
+Platform.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Platform.h
+USBAPI.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/USBAPI.h
+avr/wdt.h
+-
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/HID.cpp
+Platform.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Platform.h
+USBAPI.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/USBAPI.h
+USBDesc.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/USBDesc.h
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/HardwareSerial.cpp
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+inttypes.h
+-
+Arduino.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Arduino.h
+wiring_private.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/wiring_private.h
+HardwareSerial.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/HardwareSerial.h
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/HardwareSerial.h
+inttypes.h
+-
+Stream.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Stream.h
+USBAPI.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/USBAPI.h
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/IPAddress.cpp
+Arduino.h
+-
+IPAddress.h
+-
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Platform.h
+inttypes.h
+-
+avr/pgmspace.h
+-
+avr/eeprom.h
+-
+avr/interrupt.h
+-
+util/delay.h
+-
+Arduino.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Arduino.h
+USBDesc.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/USBDesc.h
+USBCore.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/USBCore.h
+USBAPI.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/USBAPI.h
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Print.cpp
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+math.h
+-
+Arduino.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Arduino.h
+Print.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Print.h
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Print.h
+inttypes.h
+-
+stdio.h
+-
+WString.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/WString.h
+Printable.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Printable.h
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Printable.h
+new.h
+-
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Stream.cpp
+Arduino.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Arduino.h
+Stream.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Stream.h
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Stream.h
+inttypes.h
+-
+Print.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Print.h
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Tone.cpp
+avr/interrupt.h
+-
+avr/pgmspace.h
+-
+Arduino.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Arduino.h
+pins_arduino.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/pins_arduino.h
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/USBAPI.h
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/USBCore.cpp
+Platform.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Platform.h
+USBAPI.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/USBAPI.h
+USBDesc.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/USBDesc.h
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/USBCore.h
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/USBDesc.h
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/WCharacter.h
+ctype.h
+-
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/WMath.cpp
+stdlib.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/stdlib.h
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/WString.cpp
+WString.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/WString.h
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/WString.h
+stdlib.h
+-
+string.h
+-
+ctype.h
+-
+avr/pgmspace.h
+-
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/binary.h
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/main.cpp
+Arduino.h
+-
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/new.cpp
+new.h
+-
+
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/wiring_private.h
+avr/io.h
+-
+avr/interrupt.h
+-
+stdio.h
+-
+stdarg.h
+-
+Arduino.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Arduino.h
+

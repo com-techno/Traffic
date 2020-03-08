@@ -1,0 +1,3 @@
+C:/Users/Sinyavsk/CLionProjects/maxSubstring/cmake-build-debug/CMakeFiles/maxSubstring.dir
+C:/Users/Sinyavsk/CLionProjects/maxSubstring/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Sinyavsk/CLionProjects/maxSubstring/cmake-build-debug/CMakeFiles/rebuild_cache.dir

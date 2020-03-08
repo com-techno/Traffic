@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Sinyavsk/CLionProjects/arduino-cmake-master/cmake-build-debug/example/wire_example_master_writer.cpp
+Wire.h
+-
+Arduino.h
+C:/Users/Sinyavsk/CLionProjects/arduino-cmake-master/cmake-build-debug/example/Arduino.h
+

@@ -1,0 +1,5 @@
+C:/_MyProjects/ArduinoProjects/untitled/cmake-build-debug/CMakeFiles/mega_CORE.dir
+C:/_MyProjects/ArduinoProjects/untitled/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/_MyProjects/ArduinoProjects/untitled/cmake-build-debug/CMakeFiles/untitled.dir
+C:/_MyProjects/ArduinoProjects/untitled/cmake-build-debug/CMakeFiles/untitled-size.dir
+C:/_MyProjects/ArduinoProjects/untitled/cmake-build-debug/CMakeFiles/rebuild_cache.dir

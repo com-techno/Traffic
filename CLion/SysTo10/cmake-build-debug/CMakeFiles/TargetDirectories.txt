@@ -1,0 +1,3 @@
+C:/Users/Sinyavsk/CLionProjects/SysTo10/cmake-build-debug/CMakeFiles/SysTo10.dir
+C:/Users/Sinyavsk/CLionProjects/SysTo10/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Sinyavsk/CLionProjects/SysTo10/cmake-build-debug/CMakeFiles/rebuild_cache.dir

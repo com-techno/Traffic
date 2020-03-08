@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="14de1786-8fe0-4b47-bc35-68c64a5d00ee" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VWAtWbArtcJgZVVsXyBYkRq5cg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Django" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Django" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="Django.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14de1786-8fe0-4b47-bc35-68c64a5d00ee" name="Default Changelist" comment="" />
+      <created>1577358691882</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577358691882</updated>
+      <workItem from="1577358694588" duration="2916000" />
+      <workItem from="1577380973505" duration="2816000" />
+      <workItem from="1577561353291" duration="137000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="750" y="344" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577385484906">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="750" y="344" key="#com.intellij.fileTypes.FileTypeChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1577385484906" />
+    <state width="1340" height="266" key="GridCell.Tab.0.bottom" timestamp="1577384947989">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1577384947989" />
+    <state width="1340" height="266" key="GridCell.Tab.0.center" timestamp="1577384947988">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1577384947988" />
+    <state width="1340" height="266" key="GridCell.Tab.0.left" timestamp="1577384947988">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1577384947988" />
+    <state width="1340" height="266" key="GridCell.Tab.0.right" timestamp="1577384947989">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1577384947989" />
+    <state width="1340" height="328" key="GridCell.Tab.1.bottom" timestamp="1577384940472">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1340" height="328" key="GridCell.Tab.1.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1577384940472" />
+    <state width="1340" height="328" key="GridCell.Tab.1.center" timestamp="1577384940471">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1340" height="328" key="GridCell.Tab.1.center/62.0.1858.1080@62.0.1858.1080" timestamp="1577384940471" />
+    <state width="1340" height="328" key="GridCell.Tab.1.left" timestamp="1577384940471">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1340" height="328" key="GridCell.Tab.1.left/62.0.1858.1080@62.0.1858.1080" timestamp="1577384940471" />
+    <state width="1340" height="328" key="GridCell.Tab.1.right" timestamp="1577384940471">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1340" height="328" key="GridCell.Tab.1.right/62.0.1858.1080@62.0.1858.1080" timestamp="1577384940471" />
+    <state x="692" y="365" key="com.intellij.ide.util.TipDialog" timestamp="1577561466123">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="692" y="365" key="com.intellij.ide.util.TipDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1577561466123" />
+  </component>
+</project>

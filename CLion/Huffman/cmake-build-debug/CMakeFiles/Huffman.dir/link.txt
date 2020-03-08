@@ -1,0 +1,1 @@
+C:/cygwin64/bin/g++.exe  -static-libstdc++ -static-libgcc -static -lpthread -g  -Wl,--enable-auto-import CMakeFiles/Huffman.dir/main.cpp.o  -o Huffman.exe -Wl,--out-implib,libHuffman.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

@@ -1,0 +1,3 @@
+/cygdrive/c/Users/Sinyavsk/CLionProjects/glist/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/c/Users/Sinyavsk/CLionProjects/glist/cmake-build-debug/CMakeFiles/glist.dir
+/cygdrive/c/Users/Sinyavsk/CLionProjects/glist/cmake-build-debug/CMakeFiles/edit_cache.dir

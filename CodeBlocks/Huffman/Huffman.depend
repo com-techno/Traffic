@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1580927464 source:c:\users\sinyavsk\codeblocksprojects\huffman\main.cpp
+	<iostream>
+	<vector>
+	<windows.h>
+
