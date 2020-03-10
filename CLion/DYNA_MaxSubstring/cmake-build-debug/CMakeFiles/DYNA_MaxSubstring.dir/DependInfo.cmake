@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/_MyProjects/CLionProjects/DYNA_MaxSubstring/main.cpp" "C:/_MyProjects/CLionProjects/DYNA_MaxSubstring/cmake-build-debug/CMakeFiles/DYNA_MaxSubstring.dir/main.cpp.obj"
+  "C:/_MyProjects/CLion/DYNA_MaxSubstring/main.cpp" "C:/_MyProjects/CLion/DYNA_MaxSubstring/cmake-build-debug/CMakeFiles/DYNA_MaxSubstring.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
