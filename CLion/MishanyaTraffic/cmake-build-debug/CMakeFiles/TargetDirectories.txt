@@ -1,0 +1,3 @@
+C:/_MyProjects/CLion/MishanyaTraffic/cmake-build-debug/CMakeFiles/MishanyaTraffic.dir
+C:/_MyProjects/CLion/MishanyaTraffic/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/_MyProjects/CLion/MishanyaTraffic/cmake-build-debug/CMakeFiles/rebuild_cache.dir
