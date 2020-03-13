@@ -6,27 +6,28 @@
 #include <math.h>
 #include <ctime>
 #include <map>
+#include <list>
 
 using namespace std;
 
-int kol_vo_dney_i;
-float kol_vo_dney_f;
+int iMonthLength;
+float fMonthLength;
 
 map<string, int> getMap(){
-    map<string, int> mapping;
-    mapping["Jan"] = 1;
-    mapping["Feb"] = 2;
-    mapping["Mar"] = 3;
-    mapping["Apr"] = 4;
-    mapping["May"] = 5;
-    mapping["Jun"] = 6;
-    mapping["Jul"] = 7;
-    mapping["Aug"] = 8;
-    mapping["Sep"] = 9;
-    mapping["Oct"] = 10;
-    mapping["Nov"] = 11;
-    mapping["Dec"] = 12;
-    return mapping;
+    map<string, int> months;
+    months["Jan"] = 1;
+    months["Feb"] = 2;
+    months["Mar"] = 3;
+    months["Apr"] = 4;
+    months["May"] = 5;
+    months["Jun"] = 6;
+    months["Jul"] = 7;
+    months["Aug"] = 8;
+    months["Sep"] = 9;
+    months["Oct"] = 10;
+    months["Nov"] = 11;
+    months["Dec"] = 12;
+    return months;
 }
 
 float parseFloat(string sTarget) {
@@ -47,14 +48,19 @@ string declinationDays(float fTarget) {
     return "";
 }
 
-void printCurrentStutus(float fCurrent) {
+void printCurrentStatus(float fCurrent, float fPerDay, float fPlanCurrentBalance, float fCurrentBalance) {
+    cout << "Планируемый остаток на сегодняшний день: " << setprecision(2) << fPlanCurrentBalance
+         << " (при расходе " << setprecision(3) << fPerDay << " в день)\n"
+         << "Отличие текущего остатка от планируемого: " << setprecision(2) << fCurrentBalance - fPlanCurrentBalance
+         << " (";
     fCurrent = fCurrent < 0 ? fCurrent - 0.5 : fCurrent + 0.5;
     if (fCurrent > 0)
-        cout << "опаздывание на " << abs(fCurrent);
+        cout << "опаздывание на " << abs(fCurrent) << declinationDays(fCurrent);
     else if (fCurrent < 0)
-        cout << "опережение на " << abs(fCurrent);
+        cout << "опережение на " << abs(fCurrent) << declinationDays(fCurrent);
     else
-        cout << "расход согласно графику";
+        cout << "расход согласно графику" << declinationDays(fCurrent);
+    cout << ")\n";
 }
 
 float inputCurrentBalance(int iMaxBalance) {
@@ -63,90 +69,74 @@ float inputCurrentBalance(int iMaxBalance) {
     cin >> sInput;
     fCurrentBalance = parseFloat(sInput);
     while (fCurrentBalance < 0 || fCurrentBalance > iMaxBalance) {
-        cout << "Недопустимое значение\n";
-        cout << "Текущий остаток: ";
+        cout << "Недопустимое значение\nТекущий остаток: ";
         cin >> sInput;
         fCurrentBalance = parseFloat(sInput);
     }
     return fCurrentBalance;
 }
 
-int razmer_mes(string s) {
+int getMonthLength(string s) {
     string mes = s.substr(4, 3);
-    map<string, int> mapping = getMap();
-    switch (mapping[mes]) {
-        case 1:
-        case 3:
-        case 5:
-        case 7:
-        case 8:
-        case 10:
-        case 12:
-            kol_vo_dney_f = 31.0;
-            kol_vo_dney_i = 31;
+    map<string, int> months = getMap();
+
+    switch (months[mes]) {
+        case 1:case 3:case 5:case 7:case 8:case 10:case 12:
+            fMonthLength = 31.0;
+            iMonthLength = 31;
             break;
-        case 4:
-        case 6:
-        case 9:
-        case 11:
-            kol_vo_dney_f = 30.0;
-            kol_vo_dney_i = 30;
+        case 4:case 6:case 9:case 11:
+            fMonthLength = 30.0;
+            iMonthLength = 30;
             break;
         case 2:
-            int m = atoi((s.substr(20, 4)).c_str());
-            if (m % 4 == 0) {
-                kol_vo_dney_f = 29.0;
-                kol_vo_dney_i = 29;
+            if (atoi((s.substr(20, 4)).c_str()) % 4 == 0) {
+                fMonthLength = 29.0;
+                iMonthLength = 29;
             } else {
-                kol_vo_dney_f = 28.0;
-                kol_vo_dney_i = 28;
+                fMonthLength = 28.0;
+                iMonthLength = 28;
             }
             break;
     }
-    cout << "Количество дней в месяце: " << kol_vo_dney_i << endl;
+    cout << "Количество дней в месяце: " << iMonthLength << endl;
 }
 
-int main() {
+void consoleConfig(){
     SetConsoleOutputCP(1251);
     SetConsoleCP(1251);
     system("title Прогноз остатка трафика");
-    int chislo, vsego = 15; //лимит трафика на месяц
-    float tek_ost, plan_ost, v_den;
-    time_t sec;
-    sec = time(NULL);
-    string s = asctime(localtime(&sec));
-    string date = s.substr(8, 2);
-    chislo = atoi(date.c_str());
-    cout << "Сегодняшнее число: " << chislo << endl;
-    razmer_mes(s);
-    cout << "Текущий остаток: ";
-    tek_ost = inputCurrentBalance(vsego);
-    string chas = s.substr(11, 2);
-    int pint = 0;
-    if (atoi(chas.c_str()) >= 20) {
-        pint = 1;
-        cout << "Не включая сегодняшний день" << endl;
-    } else {
-        cout << "Включая сегодняшний день" << endl;
-    }
-    v_den = vsego / kol_vo_dney_f;
-    plan_ost = v_den * (kol_vo_dney_i - chislo + 1 - pint);
-    cout.setf(ios::fixed);
-    cout << "Планируемый остаток на сегодняшний день: " << setprecision(2) << plan_ost;
-    cout << " (при расходе " << setprecision(3) << v_den << " в день)" << endl;
-    cout << "Отличие текущего остатка от планируемого: " << setprecision(2) << tek_ost - plan_ost;
-    cout << " (";
-    float dney;
-    //dney=ceil((fabs(tek_ost-plan_ost)/v_den)-0.5); //округление до целого по модулю
-    //dney=ceil((tek_ost-plan_ost)/v_den-0.5); //округление до целого с учётом знака
-    dney = (tek_ost - plan_ost) / v_den;
-    cout << printCurrentStutus(dney) << declinationDays(dney);
-    //cout << setprecision(0) << (tek_ost-plan_ost)/vsego*100 << "%";
-    cout << ")" << endl;
-    float rec = tek_ost / (kol_vo_dney_i - chislo + 1);
-    cout << "Рекомендуемый ежедневный расход до конца месяца: " << setprecision(2) << rec << endl;
+}
 
-    cout << "\nДля выхода нажмите любую клавишу...";
+int main() {
+    consoleConfig();
+    int iDate;
+    int iMaxBalance = 15; //лимит трафика на месяц
+    float fPerDay;
+    float fPlanCurrentBalance;
+    float fCurrentBalance;
+    time_t systemTime;
+    systemTime = time(NULL);
+    string sSystemDate = asctime(localtime(&systemTime));
+    iDate = atoi(sSystemDate.substr(8, 2).c_str());
+    cout << "Сегодняшнее число: " << iDate << endl;
+    getMonthLength(sSystemDate);
+    cout << "Текущий остаток: ";
+    fCurrentBalance = inputCurrentBalance(iMaxBalance);
+    int pint = 0;
+    if (atoi(sSystemDate.substr(11, 2).c_str()) >= 20) {
+        pint = 1;
+        cout << "Не включая сегодняшний день\n";
+    } else {
+        cout << "Включая сегодняшний день\n";
+    }
+    fPerDay = iMaxBalance / fMonthLength;
+    fPlanCurrentBalance = fPerDay * (iMonthLength - iDate + 1 - pint);
+    cout.setf(ios::fixed);
+    printCurrentStatus((fCurrentBalance - fPlanCurrentBalance) / fPerDay, fPerDay, fPlanCurrentBalance, fCurrentBalance);
+    cout << "Рекомендуемый ежедневный расход до конца месяца: "
+        << setprecision(2) << fCurrentBalance / (iMonthLength - iDate + 1)
+        << "\n\nДля выхода нажмите любую клавишу...";
     getch();
     return 0;
 }
