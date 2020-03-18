@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/main_drawable"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/settings_title"
+        style="@style/TitleStyle" />
+
+    <LinearLayout
+        android:id="@+id/settingsMaxLinear"
+        android:layout_below="@id/settings_title"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            style="@style/TextStyle"
+            android:text="Тариф на месяц" />
+
+        <EditText
+            android:id="@+id/settings_maxTraffic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            style="@style/TextStyle"
+            android:hint="10.0"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="3"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/settings_20hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        style="@style/TextStyle"
+        android:textSize="15sp"
+        android:layout_below="@id/settingsMaxLinear"
+        android:layout_centerHorizontal="true"
+        android:text="С 20:00 брать в расчет следующие сутки" />
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/settings_save"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+
+</RelativeLayout>

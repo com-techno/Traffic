@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_drawable"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/solve_title"
+        style="@style/TitleStyle" />
+
+
+    <LinearLayout
+        android:id="@+id/solve_llsolve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/solve_title"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/solve_et"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Остаток трафика..."
+            android:inputType="numberDecimal"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/solve_button"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:padding="10dp"
+            android:text="Рассчитать" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/solve_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/solve_llsolve"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Остаток превышает максимальное значение! Измените максимальное значение или введите другое число"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:text="Перейти" />
+    </LinearLayout>
+
+</RelativeLayout>
